@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TAW-MOD4-EX4-QUESTION5</title>
+  </head>
+<body>
+    <h1>Text Inputs</h1>
+
+    <ul>
+      <li>text01: <input type="text" id="text01" /></li>
+      <li>text02: <input type="text" id="text02" /></li>
+      <li>text03: <input type="text" id="text03" /></li>
+    </ul>
+
+    <button id="output-button">Output Text</button>
+
+    <div id="output"></div>
+    <script>
+        function outputText()
+            {
+                let outputDiv = document.getElementById("output")
+                let text1 = document.getElementById("text01").value
+                let text2 = document.getElementById("text02").value
+                let text3 = document.getElementById("text03").value
+                let outputText= text1 +" "+text2 +" "+text3
+
+                outputDiv.innerHTML=outputText
+            }
+        var button=document.getElementById("output-button")
+        button.addEventListener("click",outputText)
+        
+    </script>
+</body>
+</html>
